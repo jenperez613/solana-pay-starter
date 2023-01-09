@@ -22,4 +22,4 @@ const IPFSDownload = ({ hash, filename }) => {
   );
 };
 
-export default IPFDownload;
+export default IPFSDownload;
