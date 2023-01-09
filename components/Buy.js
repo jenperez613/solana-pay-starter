@@ -7,7 +7,7 @@ import { Keypair, Transaction } from '@solana/web3.js';
 import React, { useEffect, useMemo, useState } from 'react';
 import { InfinitySpin } from 'react-loader-spinner';
 import { addOrder, fetchItem, hasPurchased } from '../lib/api';
-import IPFSDownload from './IPFSDownload';
+import IPFSDownload from './IpfsDownload';
 
 const STATUS = {
   Initial: 'Initial',

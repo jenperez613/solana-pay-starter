@@ -1,7 +1,7 @@
 import React from 'react';
 import useIPFS from '../hooks/useIPFS';
 
-const IpfsDownload = ({ hash, filename }) => {
+const IPFSDownload = ({ hash, filename }) => {
   const file = useIPFS(hash, filename);
 
   return (
@@ -22,4 +22,4 @@ const IpfsDownload = ({ hash, filename }) => {
   );
 };
 
-export default IpfsDownload;
+export default IPFDownload;
