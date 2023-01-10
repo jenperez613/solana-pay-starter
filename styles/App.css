@@ -93,7 +93,7 @@ button:disabled {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: sticky;
   bottom: 0 px;
   width: 100%;
   bottom: 0;

@@ -2,6 +2,7 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import React, { useEffect, useState } from 'react';
 import CreateProduct from '../components/CreateProduct';
+import Footer from '../components/Footer';
 import HeadComponent from '../components/Head';
 import Product from '../components/Product';
 
@@ -75,21 +76,9 @@ const App = () => {
             ? renderItemBuyContainer()
             : renderNotConnectedContainer()}
         </main>
-
-        <div className='footer-container'>
-          <img
-            alt='Twitter Logo'
-            className='twitter-logo'
-            src='twitter-logo.svg'
-          />
-          <a
-            className='footer-text'
-            href={TWITTER_LINK}
-            target='_blank'
-            rel='noreferrer'>
-            {`built on @${TWITTER_HANDLE}`} by JenPerez
-          </a>
-        </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
