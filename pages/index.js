@@ -41,6 +41,7 @@ const App = () => {
       <div className='button-container'>
         <WalletMultiButton className='cta-button connect-wallet-button' />
       </div>
+      <Footer/>
     </div>
   );
 
@@ -49,7 +50,11 @@ const App = () => {
       {products.map((product) => (
         <Product key={product.id} product={product} />
       ))}
+      <div>
+        <Footer />
+      </div>
     </div>
+
   );
 
   return (
@@ -77,9 +82,7 @@ const App = () => {
             : renderNotConnectedContainer()}
         </main>
       </div>
-      <div>
-        <Footer />
-      </div>
+
     </div>
   );
 };
